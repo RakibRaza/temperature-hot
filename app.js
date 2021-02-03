@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
 async function getWeather(city) {
   try {
     const res = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=66cb2360820631e7f3a56386bd7e2928`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=66cb2360820631e7f3a56386bd7e2928`
     );
     const data = await res.json();
     const dataObj = {
